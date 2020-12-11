@@ -9,26 +9,26 @@
 </head>
 
 <body>
-    <div id="root">
+    <div id="root" class="root">
         <form action="">
 
             <!--Основные установки-->
-            <div class="settings">
+            <section class="settings">
                 @@include('includes/_settings.html')
-            </div>
-            <!--end-->
+            </section>
+            <!--end Основные установки-->
 
             <!--Дополнительные установки-->
-            <div class="settings-more">
-
-            </div>
-            <!--end-->
+            <section class="settings-more">
+                @@include('includes/_settings-more.html')
+            </section>
+            <!--end Дополнительные установки-->
 
             <!--Отправить форму-->
-            <div class="submit">
-
-            </div>
-            <!--end-->
+            <section class="submit">
+                @@include('includes/_submit.html')
+            </section>
+            <!--end Отправить форму-->
         </form>
     </div>
     <script src="js/script.js"></script>

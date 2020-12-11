@@ -1,0 +1,118 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(212, 173, 173);
+
+}
+
+// body {
+//     padding: 0 20px;
+
+//     @media (min-width: 768px) {
+//         padding: 0 30px;
+//     }
+
+//     @media (min-width: 1280px) {
+//         padding: 0 70px;
+//     }
+// }
+
+.root {
+    margin: auto;
+    width: 1136px;
+    // @media (min-width:1280px) {
+    //     position: relative;
+    // }
+}
+
+/*
+** mixin for importing fonts
+*/
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"),
+        url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+
+}
+
+/* 
+
+** element width calculation:
+
+$colums - how many columns in the grid the designer has drawn;
+$N - how many columns does an element occupy;
+$offset - indent between columns.
+
+*/
+@mixin grid ($colums, $N, $offset) {
+    width: calc(100% / #{$colums} * #{$N} - #{$offset}px);
+}
+
+/*
+** font-style
+*/
+
+
+@mixin font-style ($font-size, $line-height, $font-weight, $font-color) {
+    font-size: #{$font-size};
+    line-height: #{$line-height};
+    font-weight: #{$font-weight};
+    color: $font-color;
+}
+
+/*
+** reset button style
+*/
+button {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+button:focus {
+    outline: 0;
+}
+
+/*
+** visually-hidden
+*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+/**
+* Focus Visible 
+*/
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
