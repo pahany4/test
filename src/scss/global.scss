@@ -47,19 +47,6 @@ body {
 ** END mixin for importing fonts
 */
 
-/* 
-
-** element width calculation:
-
-$colums - how many columns in the grid the designer has drawn;
-$N - how many columns does an element occupy;
-$offset - indent between columns.
-
-*/
-@mixin grid ($colums, $N, $offset) {
-    width: calc(100% / #{$colums} * #{$N} - #{$offset}px);
-}
-
 /*
 ** font-style
 */
@@ -114,4 +101,12 @@ button:focus {
     border-radius: 8px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.3), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.43);
+}
+
+/**
+* Focus Visible 
+*/
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
 }

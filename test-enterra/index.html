@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -90,7 +90,7 @@
     <div class="checkbox-info quick-landing__checkbox">
         <input class="visually-hidden quick-input-check" type="checkbox" checked name="quick" id="quick-landing" value="quick-landing" aria-label="выбрать использование быстрой посадки">
 
-        <label for="quick-landing" class="check-fake"></label>
+        <label tabindex="0" for="quick-landing" class="check-fake"></label>
 
         <label class="quick-label-check" for="quick-landing">Быстрая посадка</label>
         <button class="btn btn_info" aria-label="Информация о быстрой посадке">i</button>
@@ -114,7 +114,7 @@
     <!-- чекбокс, описание и кнопка инфо -->
     <div class="checkbox-info auto-purchase__checkbox">
         <input class="visually-hidden quick-input-check" type="checkbox" checked name="quick" id="auto-purchase-check" value="auto-purchase" aria-label="Выбор опции 'Автодокупка' ">
-        <label for="auto-purchase-check" class="check-fake"></label>
+        <label tabindex="0" for="auto-purchase-check" class="check-fake"></label>
         <label class=" quick-label-check" for="auto-purchase-check">Автодокупка</label>
         <button class="btn btn_info" aria-label="Информация об 'Автодокупки'">i</button>
         <p class="quick-description">Я хочу пользоваться функцией автоматической докупки и понимаю, что она будет автоматически пополнять мой счет для обеспечения заданого номера стека.</p>
@@ -144,7 +144,7 @@
 <div class="save-settings">
     <div class="checkbox-info save-settings__checkbox">
         <input class="visually-hidden quick-input-check save-input-check" type="checkbox" checked name="quick" id="save-settings" value="save-settings" aria-label="Выбор сохранения настроек">
-        <label for="save-settings" class="check-fake"></label>
+        <label tabindex="0" for="save-settings" class="check-fake"></label>
         <label class="quick-label-check save-label-check" for="save-settings">Сохранить настройки после <br /> выхода из приложения</label>
         <button class="btn btn_info" aria-label="Информация об опции 'Сохранить'">i</button>
         <p class="quick-description visually-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam minima necessitatibus aperiam possimus alias consectetur, fuga commodi perferendis quis temporibus ipsum eos, eum rerum inventore enim, distinctio soluta harum recusandae.</p>
@@ -166,7 +166,7 @@
             <!--end Отправить форму-->
         </form>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>

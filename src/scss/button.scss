@@ -13,3 +13,9 @@
     transform: translateY(3px);
     box-shadow: none;
 }
+
+.btn:focus,
+input:focus,
+.check-fake:focus {
+    outline: 3px solid #000;
+}
