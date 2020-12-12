@@ -10,6 +10,8 @@ var Max = document.getElementById('Max');
 var Bank = document.getElementById('Bank');
 var HalfBank = document.getElementById('HalfBank');
 
+var infoButtons = document.querySelectorAll('.btn_info')
+
 var min = 1000;
 var max = 50000;
 var bank = 2609;
@@ -63,4 +65,15 @@ HalfBank.addEventListener('click', function (evt) {
     input.value = bank / 2;
     slider.value = +input.value;
 })
+function akkordeon() {
+    for (var i = 0; i < infoButtons.length; i++) {
+        infoButtons[i].addEventListener('click', function (evt) {
+            evt.preventDefault();
+            var infoText = this.parentNode.querySelector(".quick-description");
+            infoText.classList.toggle('visually-hidden')
+        });
+    }
 
+}
+
+akkordeon();

@@ -8,6 +8,8 @@ var Max = document.getElementById('Max');
 var Bank = document.getElementById('Bank');
 var HalfBank = document.getElementById('HalfBank');
 
+var infoButtons = document.querySelectorAll('.btn_info')
+
 var min = 1000;
 var max = 50000;
 var bank = 2609;
