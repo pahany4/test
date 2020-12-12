@@ -852,18 +852,6 @@ input[type="range"]::-ms-track {
   line-height: 16.8px;
   font-weight: normal;
   color: #fff;
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Chrome/Safari/Opera */
-  /* Konqueror */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently
-                                    not supported by any browser */
 }
 
 .btn_info {
@@ -878,6 +866,23 @@ input[type="range"]::-ms-track {
   font-style: italic;
   font-size: 40px;
   line-height: 0;
+}
+
+.btn_info,
+.quick-label-check,
+.check-fake {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                not supported by any browser */
 }
 
 .quick-description {

@@ -49,21 +49,6 @@
     display: inline-block;
     vertical-align: middle;
     @include font-style (24px, 16.8px, normal, $text-color);
-
-    // запрет выделения текста
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Chrome/Safari/Opera */
-    -khtml-user-select: none;
-    /* Konqueror */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none;
-    /* Non-prefixed version, currently
-                                    not supported by any browser */
 }
 
 //кнопка инфо
@@ -79,4 +64,25 @@
     font-style: italic;
     font-size: 40px;
     line-height: 0;
+}
+
+
+// запрет выделения текста
+
+.btn_info,
+.quick-label-check,
+.check-fake {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                not supported by any browser */
 }
