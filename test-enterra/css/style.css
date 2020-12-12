@@ -587,7 +587,7 @@ form {
 }
 
 .ante__set-input {
-  width: 124px;
+  width: 121px;
   margin-right: 21px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -801,6 +801,140 @@ input[type="range"]::-ms-track {
   margin-left: 43px;
 }
 
+.quick-landing__checkbox {
+  padding-top: 19px;
+  margin-bottom: 9px;
+}
+
+.check-fake {
+  margin-right: 23px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#eaeaea));
+  background-image: -o-linear-gradient(top, #fdfdfd, #eaeaea);
+  background-image: linear-gradient(to bottom, #fdfdfd, #eaeaea);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-shadow: 0px -5px 5px 0px rgba(255, 255, 255, 0.2), 5px 0px 5px 0px rgba(255, 255, 255, 0.2), 0px 5px 5px 0px rgba(255, 255, 255, 0.2), -5px 0px 5px 0px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px -5px 5px 0px rgba(255, 255, 255, 0.2), 5px 0px 5px 0px rgba(255, 255, 255, 0.2), 0px 5px 5px 0px rgba(255, 255, 255, 0.2), -5px 0px 5px 0px rgba(255, 255, 255, 0.2);
+}
+
+.check-fake::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quick-input-check:checked + .check-fake::before {
+  background-image: url(../img/check.png);
+}
+
+.quick-label-check {
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  line-height: 16.8px;
+  font-weight: normal;
+  color: #fff;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+
+.btn_info {
+  display: inline-block;
+  vertical-align: middle;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  padding: 0;
+  text-align: center;
+  font-family: "Times new Roman", serif;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 0;
+}
+
+.quick-description {
+  font-size: 20px;
+  line-height: normal;
+  font-weight: normal;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+
+.quick-input {
+  font-size: 22px;
+  line-height: 1;
+  font-weight: normal;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.quick-label-text {
+  margin-right: 12px;
+  text-align: right;
+}
+
+.quick-input-text {
+  width: 84px;
+  margin-right: 11px;
+}
+
+.quick-landing {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.auto-purchase {
+  padding-top: 11px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.auto-purchase__input + .auto-purchase__input {
+  margin-top: 8px;
+}
+
+.save-settings {
+  padding-top: 11px;
+}
+
+.save-label-check {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
 .submit {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -810,6 +944,17 @@ input[type="range"]::-ms-track {
   grid-row: 2;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.submit__ok,
+.submit__Cashier,
+.submit__Cancel {
+  width: 150px;
+}
+
+.submit__ok,
+.submit__Cashier {
+  margin-right: 5px;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

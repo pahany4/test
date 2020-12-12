@@ -88,7 +88,10 @@
 <div class="quick-landing">
     <!-- чекбокс, описание и кнопка инфо -->
     <div class="checkbox-info quick-landing__checkbox">
-        <input class="quick-input-check" type="checkbox" name="quick" id="quick-landing" value="quick-landing" aria-label="выбрать использование быстрой посадки">
+        <input class="visually-hidden quick-input-check" type="checkbox" checked name="quick" id="quick-landing" value="quick-landing" aria-label="выбрать использование быстрой посадки">
+
+        <label for="quick-landing" class="check-fake"></label>
+
         <label class="quick-label-check" for="quick-landing">Быстрая посадка</label>
         <button class="btn btn_info" aria-label="Информация о быстрой посадке">i</button>
     </div>
@@ -96,7 +99,7 @@
 
     <!-- Ввод автоматической ставки -->
     <div class="quick-input quick-landing__input">
-        <label class="quick-label-text" for="auto-ante">Автоматически ставить на стол:</label>
+        <label class="quick-label-text" for="auto-ante">Автоматически <br /> ставить на стол:</label>
         <input class="input-text quick-input-text" type="text" name="quick" id="auto-ante" value="2" aria-label="Ввод автоматической ставки">
         <span>ББ</span>
     </div>
@@ -109,10 +112,11 @@
 <div class="auto-purchase">
     <!-- чекбокс, описание и кнопка инфо -->
     <div class="checkbox-info auto-purchase__checkbox">
-        <input class="quick-input-check" type="checkbox" name="quick" id="auto-purchase-check" value="auto-purchase" aria-label="Выбор опции 'Автодокупка' ">
+        <input class="visually-hidden quick-input-check" type="checkbox" checked name="quick" id="auto-purchase-check" value="auto-purchase" aria-label="Выбор опции 'Автодокупка' ">
+        <label for="auto-purchase-check" class="check-fake"></label>
         <label class=" quick-label-check" for="auto-purchase-check">Автодокупка</label>
-        <p class="quick-description">Я хочу пользоваться функцией автоматической докупки и понимаю, что она будет автоматически пополнять мой счет для обеспечения заданого номера стека.</p>
         <button class="btn btn_info" aria-label="Информация об 'Автодокупки'">i</button>
+        <p class="quick-description">Я хочу пользоваться функцией автоматической докупки и понимаю, что она будет автоматически пополнять мой счет для обеспечения заданого номера стека.</p>
     </div>
     <!--end чекбокс, описание и кнопка инфо -->
 
@@ -138,8 +142,9 @@
 <!-- Сохранить настройки после выхода -->
 <div class="save-settings">
     <div class="checkbox-info save-settings__checkbox">
-        <input class="quick-input-check save-input-check" type="checkbox" name="quick" id="save-settings" value="save-settings" aria-label="Выбор сохранения настроек">
-        <label class="quick-label-check save-label-check" for="save-settings">Сохранить настройки после выхода из приложения</label>
+        <input class="visually-hidden quick-input-check save-input-check" type="checkbox" checked name="quick" id="save-settings" value="save-settings" aria-label="Выбор сохранения настроек">
+        <label for="save-settings" class="check-fake"></label>
+        <label class="quick-label-check save-label-check" for="save-settings">Сохранить настройки после <br /> выхода из приложения</label>
         <button class="btn btn_info" aria-label="Информация об опции 'Сохранить'">i</button>
     </div>
 </div>

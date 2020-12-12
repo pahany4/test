@@ -1,0 +1,17 @@
+.quick-input {
+    @include font-style (22px, 1, normal, $text-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.quick-label-text {
+    margin-right: 12px;
+    text-align: right;
+}
+
+
+.quick-input-text {
+    width: 84px;
+    margin-right: 11px;
+}

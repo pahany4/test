@@ -4,4 +4,11 @@
     margin-left: 43px;
 }
 
-@import "checkbox-info.scss" // чекбокс, описание и кнопка инфо
+
+@import "checkbox-info.scss"; // чекбокс, описание и кнопка инфо
+@import "quick-description.scss"; // подробная информация
+@import "inputText.scss"; // стили input text
+@import "quick-landing.scss"; // отступы, рамка в "быстрая посадка"
+@import "auto-purchase.scss"; // отступы, рамка в "Автодокупка"
+@import "auto-purchase__input.scss"; // отступ между двумя input
+@import "save-settings.scss" // кастомные стили "Сохранить настройки после выхода"

@@ -1,0 +1,5 @@
+.quick-description {
+    @include font-style (20px, normal, normal, $text-color);
+    margin-top: 10px;
+    margin-bottom: 9px;
+}

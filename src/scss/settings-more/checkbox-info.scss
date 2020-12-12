@@ -1,0 +1,82 @@
+.quick-landing__checkbox {
+    padding-top: 19px;
+    margin-bottom: 9px;
+}
+
+//чекбокс
+.check-fake {
+    margin-right: 23px;
+
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #fdfdfd, #eaeaea);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px -5px 5px 0px rgba(255, 255, 255, 0.2),
+        5px 0px 5px 0px rgba(255, 255, 255, 0.2),
+        0px 5px 5px 0px rgba(255, 255, 255, 0.2),
+        -5px 0px 5px 0px rgba(255, 255, 255, 0.2);
+}
+
+.check-fake::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+.quick-input-check:checked+.check-fake::before {
+    background-image: url(../img/check.png);
+}
+
+
+//label инфо
+
+.quick-label-check {
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    @include font-style (24px, 16.8px, normal, $text-color);
+
+    // запрет выделения текста
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+
+//кнопка инфо
+.btn_info {
+    display: inline-block;
+    vertical-align: middle;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    padding: 0;
+    text-align: center;
+    font-family: "Times new Roman", serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 0;
+}
