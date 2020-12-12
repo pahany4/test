@@ -1,0 +1,12 @@
+//.ante {}
+
+.ante__balance {
+    @include font-style (22px, 16.8px, normal, $text-color)
+}
+
+//.ante__set {}
+
+@import "slider-wrap.scss";
+@import "ante__set-buttons.scss";
+@import "ante__set-description.scss";
+@import "ante__set-quick.scss"

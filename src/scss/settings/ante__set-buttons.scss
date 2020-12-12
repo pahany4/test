@@ -1,0 +1,12 @@
+.ante__set-buttons {
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.ante__set-button {
+    width: calc(25% - 8px);
+}
+
+.ante__set-button+.ante__set-button {
+    margin-left: 8px;
+}

@@ -1,0 +1,10 @@
+.ante__set-description {
+    padding-left: 5px;
+    margin-bottom: 22px;
+}
+
+
+.ante__set-description__title {
+    margin: 0;
+    @include font-style (20px, normal, normal, $text-color)
+}

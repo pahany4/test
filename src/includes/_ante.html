@@ -7,22 +7,27 @@
 
     <!--сделать взнос-->
     <div class="ante__set">
-        <input type="text" name="" id="">
 
-        <!--слайдер-->
-        <div class="ante__slider">
-            <button class="plus">-</button>
-            <div id="slider"></div>
-            <button class="minus">+</button>
+        <div class="slider-wrap">
+            <input class="input-text ante__set-input" type="text" name="ante__set" id="ante__set" value="12800">
+
+            <!--слайдер-->
+            <div class="ante__slider">
+                <button id="minus" class="minus"></button>
+                <div class="range-wrap">
+                    <input id="slider" class="range" type="range" min="1000" max="50000" step="100" value="12800">
+                </div>
+                <button id="plus" class="plus"></button>
+            </div>
+            <!--end слайдер-->
         </div>
-        <!--end слайдер-->
 
         <!--Кнопки выбора взноса-->
         <div class="ante__set-buttons">
-            <button class="btn">Min</button>
-            <button class="btn">Max</button>
-            <button class="btn">Bank</button>
-            <button class="btn">1/2 Bank</button>
+            <button id="Min" class="btn ante__set-button">Min</button>
+            <button id="Max" class="btn ante__set-button">Max</button>
+            <button id="Bank" class="btn ante__set-button">Bank</button>
+            <button id="HalfBank" class="btn ante__set-button">1/2 Bank</button>
         </div>
         <!--end Кнопки выбора взноса-->
 
@@ -36,7 +41,7 @@
 
         <!-- Быстрая посадка -->
         <div class="ante__set-quick">
-            <button class="btn ante__set-quick">Быстрая посадка и автодокупка</button>
+            <button class="btn ante__set-quick-btn">Быстрая посадка и автодокупка</button>
         </div>
         <!--end Быстрая посадка -->
 

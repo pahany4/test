@@ -37,22 +37,27 @@
 
     <!--сделать взнос-->
     <div class="ante__set">
-        <input type="text" name="" id="">
 
-        <!--слайдер-->
-        <div class="ante__slider">
-            <button class="plus">-</button>
-            <div id="slider"></div>
-            <button class="minus">+</button>
+        <div class="slider-wrap">
+            <input class="input-text ante__set-input" type="text" name="ante__set" id="ante__set" value="12800">
+
+            <!--слайдер-->
+            <div class="ante__slider">
+                <button id="minus" class="minus"></button>
+                <div class="range-wrap">
+                    <input id="slider" class="range" type="range" min="1000" max="50000" step="100" value="12800">
+                </div>
+                <button id="plus" class="plus"></button>
+            </div>
+            <!--end слайдер-->
         </div>
-        <!--end слайдер-->
 
         <!--Кнопки выбора взноса-->
         <div class="ante__set-buttons">
-            <button class="btn">Min</button>
-            <button class="btn">Max</button>
-            <button class="btn">Bank</button>
-            <button class="btn">1/2 Bank</button>
+            <button id="Min" class="btn ante__set-button">Min</button>
+            <button id="Max" class="btn ante__set-button">Max</button>
+            <button id="Bank" class="btn ante__set-button">Bank</button>
+            <button id="HalfBank" class="btn ante__set-button">1/2 Bank</button>
         </div>
         <!--end Кнопки выбора взноса-->
 
@@ -66,7 +71,7 @@
 
         <!-- Быстрая посадка -->
         <div class="ante__set-quick">
-            <button class="btn ante__set-quick">Быстрая посадка и автодокупка</button>
+            <button class="btn ante__set-quick-btn">Быстрая посадка и автодокупка</button>
         </div>
         <!--end Быстрая посадка -->
 
@@ -82,7 +87,7 @@
                 <!-- Быстрая посадка -->
 <div class="quick-landing">
     <!-- чекбокс, описание и кнопка инфо -->
-    <div class="quick-landing__checkbox">
+    <div class="checkbox-info quick-landing__checkbox">
         <input class="quick-input-check" type="checkbox" name="quick" id="quick-landing" value="quick-landing" aria-label="выбрать использование быстрой посадки">
         <label class="quick-label-check" for="quick-landing">Быстрая посадка</label>
         <button class="btn btn_info" aria-label="Информация о быстрой посадке">i</button>
@@ -90,9 +95,9 @@
     <!--end чекбокс, описание и кнопка инфо -->
 
     <!-- Ввод автоматической ставки -->
-    <div class="quick-landing__input">
+    <div class="quick-input quick-landing__input">
         <label class="quick-label-text" for="auto-ante">Автоматически ставить на стол:</label>
-        <input class="quick-input-text" type="text" name="quick" id="auto-ante" value="2" aria-label="Ввод автоматической ставки">
+        <input class="input-text quick-input-text" type="text" name="quick" id="auto-ante" value="2" aria-label="Ввод автоматической ставки">
         <span>ББ</span>
     </div>
     <!--end Ввод автоматической ставки -->
@@ -103,7 +108,7 @@
 <!-- Автодокупка -->
 <div class="auto-purchase">
     <!-- чекбокс, описание и кнопка инфо -->
-    <div class="auto-purchase__checkbox">
+    <div class="checkbox-info auto-purchase__checkbox">
         <input class="quick-input-check" type="checkbox" name="quick" id="auto-purchase-check" value="auto-purchase" aria-label="Выбор опции 'Автодокупка' ">
         <label class=" quick-label-check" for="auto-purchase-check">Автодокупка</label>
         <p class="quick-description">Я хочу пользоваться функцией автоматической докупки и понимаю, что она будет автоматически пополнять мой счет для обеспечения заданого номера стека.</p>
@@ -112,17 +117,17 @@
     <!--end чекбокс, описание и кнопка инфо -->
 
     <!-- Ввод максимальной ББ -->
-    <div class="auto-purchase__input">
+    <div class="quick-input auto-purchase__input">
         <label class="quick-label-text" for="value-BB">Если у меня меньше:</label>
-        <input class="quick-input-text" type="text" name="" id="value-BB" value="2" aria-label="Ввод максимального ББ">
+        <input class="input-text quick-input-text" type="text" name="" id="value-BB" value="2" aria-label="Ввод максимального ББ">
         <span>ББ</span>
     </div>
     <!--end Ввод максимальной ББ -->
 
     <!-- Ввод автоматической докупки -->
-    <div class="auto-purchase__input">
+    <div class="quick-input auto-purchase__input">
         <label class="quick-label-text" for="auto-purchase-value">Автоматически докупать до:</label>
-        <input class="quick-input-text" type="text" name="quick" id="auto-purchase-value" value="2" aria-label="Ввод докупки">
+        <input class="input-text quick-input-text" type="text" name="quick" id="auto-purchase-value" value="2" aria-label="Ввод докупки">
         <span>ББ</span>
     </div>
     <!--end Ввод автоматической докупки -->
@@ -132,9 +137,9 @@
 
 <!-- Сохранить настройки после выхода -->
 <div class="save-settings">
-    <div class="save-settings__checkbox">
-        <input class="save-input-check" type="checkbox" name="quick" id="save-settings" value="save-settings" aria-label="Выбор сохранения настроек">
-        <label class="save-label-check" for="save-settings">Сохранить настройки после выхода из приложения</label>
+    <div class="checkbox-info save-settings__checkbox">
+        <input class="quick-input-check save-input-check" type="checkbox" name="quick" id="save-settings" value="save-settings" aria-label="Выбор сохранения настроек">
+        <label class="quick-label-check save-label-check" for="save-settings">Сохранить настройки после выхода из приложения</label>
         <button class="btn btn_info" aria-label="Информация об опции 'Сохранить'">i</button>
     </div>
 </div>

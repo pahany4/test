@@ -1,0 +1,30 @@
+.ante__set-quick {
+    margin-bottom: 33px;
+}
+
+.ante__set-quick-btn {
+    position: relative;
+    padding-left: 28px;
+    width: 100%;
+    text-align: left;
+}
+
+.ante__set-quick-btn::before,
+.ante__set-quick-btn::after {
+    content: "";
+    width: 13px;
+    height: 23px;
+    background-image: url(../img/arrow.png);
+    display: block;
+    position: absolute;
+}
+
+.ante__set-quick-btn::before {
+    top: 16px;
+    right: 21px;
+}
+
+.ante__set-quick-btn::after {
+    top: 16px;
+    right: 31px;
+}

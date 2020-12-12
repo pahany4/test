@@ -1,0 +1,14 @@
+//общие стили слайдера
+.slider-wrap {
+    display: flex;
+    margin-bottom: 26px;
+}
+
+.ante__set-input {
+    width: 124px;
+    margin-right: 21px;
+    flex-shrink: 0;
+}
+
+//end общие стили слайдера
+@import "ante__slider.scss"

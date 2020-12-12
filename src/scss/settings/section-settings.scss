@@ -1,0 +1,21 @@
+.settings {
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+    margin-right: 43px;
+}
+
+.settings::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 476px;
+    background-color: rgba(0, 0, 0, 0.6);
+    right: -40px;
+    top: 26px;
+}
+
+@import "settings/ante-title.scss"; // входной взнос заголовок
+@import "settings/logo.scss"; // логитп
+@import "settings/ante.scss"; // ставка
