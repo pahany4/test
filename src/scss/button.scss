@@ -7,6 +7,9 @@
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, .8),
         inset 0px 2px 0px 0px rgba(255, 255, 255, 0.14);
     padding: .5em .2em .5em .2em;
+    // убать эффект нажатия кнопок на android chrome
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn:active {
